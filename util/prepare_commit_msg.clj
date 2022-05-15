@@ -40,7 +40,9 @@
 
 (defn combine-ticket-number-with-message
   []
-  (format "%s %s" (jira-ticket-number) commit-message))
+  (let [cm (format "%s %s" (jira-ticket-number) commit-message)]
+    (prn cm)
+    cm))
 
 (defn skip?
   [branch]
@@ -54,3 +56,12 @@
          (combine-ticket-number-with-message))
        (spit commit-message-file))
   (System/exit 0))
+
+
+(comment
+  (-main)
+
+
+
+
+  #_{})
