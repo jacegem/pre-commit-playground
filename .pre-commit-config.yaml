@@ -49,3 +49,5 @@ repos:
         name: Appending jira ticket number to commit message
         entry: bash -c 'bb --classpath util --main prepare_commit_msg'
         language: system
+        files: .*
+        # types: [clojure]
