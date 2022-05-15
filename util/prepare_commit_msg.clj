@@ -32,7 +32,7 @@
                   (re-seq #"^[a-zA-Z]+-[0-9]+")
                   first)]
     (upper-case s)
-    (throw (AssertionError. "브랜치에 티켓 번호가 없습니다. AR-123-blah-blah 같은 이름으로 만들어주세요."))))
+    (throw (AssertionError. "브랜치에 티켓 번호가 없습니다. FEAT-123-blah-blah 같은 이름으로 만들어주세요."))))
 
 (defn include-jira-ticket-number?
   []
