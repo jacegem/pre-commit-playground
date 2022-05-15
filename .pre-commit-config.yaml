@@ -48,5 +48,5 @@ repos:
     -   id: jira-ticket-number-commit-msg
         name: Appending jira ticket number to commit message
         entry: bash -c 'bb --classpath util --main prepare_commit_msg'
-        stages: [commit-msg]
+        stages: [commit]
         language: system
