@@ -38,13 +38,6 @@ repos:
     # -   id: debug-statements
 -   repo: local
     hooks:
-    -   id: cljfmt-reformat
-        name: Reformatting files with cljfmt
-        entry: bash -c 'clj -Sdeps "{:deps {cljfmt/cljfmt {:mvn/version \"0.8.0\"}}}" -M -m cljfmt.main fix --indents util/indents.clj'
-        stages: [push]
-        require_serial: true
-        language: system
-
     -   id: jira-ticket-number-commit-msg
         name: Appending jira ticket number to commit message
         entry: bash -c 'bb --classpath util --main prepare_commit_msg'
