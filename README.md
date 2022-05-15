@@ -4,8 +4,8 @@ https://pre-commit.com/
 
 Using git hook
 
-- missing semicolons, 
-- trailing whitespace, 
+- missing semicolons,
+- trailing whitespace,
 - debug statements.
 
 ## Installation
@@ -14,4 +14,19 @@ Using git hook
 brew install pre-commit
 ```
 
-# pre-commit-playground
+## Add a pre-commit configuration
+
+```
+.pre-commit-config.yaml
+```
+
+
+## show .git folder
+
+.vscode/settings.json
+
+```
+"files.exclude": {
+     "**/.git": false
+}
+```
