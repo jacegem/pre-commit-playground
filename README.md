@@ -30,3 +30,6 @@ brew install pre-commit
      "**/.git": false
 }
 ```
+
+
+## Commit
