@@ -35,7 +35,7 @@ repos:
     -   id: end-of-file-fixer
     -   id: check-yaml
     -   id: check-added-large-files
-    -   id: debug-statements
+    # -   id: debug-statements
 -   repo: local
     hooks:
     -   id: cljfmt-reformat
@@ -49,5 +49,6 @@ repos:
         name: Appending jira ticket number to commit message
         entry: bash -c 'bb --classpath util --main prepare_commit_msg'
         language: system
+        stages: [prepare-commit-msg]
         files: .*
         # types: [clojure]
