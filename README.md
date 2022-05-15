@@ -35,3 +35,11 @@ brew install pre-commit
 ## https://pre-commit.com/#repository-local-hooks
 
 change 234
+
+
+
+## stage 추가
+
+```
+pre-commit install --hook-type commit-msg
+```
